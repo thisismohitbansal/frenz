@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "873900417886",
+    "project_id": "frenz-9e5c7",
+    "storage_bucket": "frenz-9e5c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873900417886:android:0ce1e9c4e7c647162365cf",
+        "android_client_info": {
+          "package_name": "com.example.frenz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWMJ7n5YF5qmMlQidcBmMSCbqR6euLp8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

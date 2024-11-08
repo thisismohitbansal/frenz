@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#121212"
+    android:layout_height="match_parent"
+    tools:context=".homeActivity.fragment.EditFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="53dp">
+
+        <!-- Your ImageView -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image_preview_edit"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#DC6161"
+            android:layout_gravity="center"
+            app:shapeAppearanceOverlay="@style/circular"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/white"
+            android:src="@drawable/card_rectangle"
+            android:scaleType="centerCrop"/>
+
+        <ProgressBar
+            android:id="@+id/imageProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:progressTint="@color/confirm_enable" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/camera_btn"
+        android:layout_width="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_height="50dp"
+        android:src="@android:drawable/ic_menu_camera"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#1E1E1E"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/profile_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/no_underline"
+                android:maxLines="4"
+                android:textColorHint="#808080"
+                android:hint="@string/just_for_fun"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_edit_profile_confirm_details_btn"
+        android:layout_width="match_parent"
+        android:backgroundTint="#285ED1"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="50dp"
+        android:minHeight="48dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:text="@string/done"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

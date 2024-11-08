@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".homeActivity.fragment.WriteFragment">
+
+    <ImageView
+        android:id="@+id/cross_btn"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cross_shape"
+        app:layout_constraintBottom_toTopOf="@+id/lineImageView"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857"
+        android:contentDescription="@string/crossbtn" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter_bold"
+        android:paddingStart="20dp"
+        android:paddingTop="25dp"
+        android:paddingEnd="20dp"
+        android:text="@string/new_post"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/lineImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/line"
+        android:src="@drawable/line_drawable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_picture_new_post"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:background="#DC6161"
+        android:scaleType="centerCrop"
+        android:src="@drawable/card_rectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:shapeAppearanceOverlay="@style/circular"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/profile_name_new_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/inter_medium"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/profile_picture_new_post"
+        app:layout_constraintTop_toBottomOf="@+id/lineImageView" />
+
+    <ImageView
+        android:id="@+id/faltu"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="invisible"
+        android:background="@drawable/round_shape"
+        android:contentDescription="profile_img"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineImageView" />
+
+    <EditText
+        android:id="@+id/post_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/no_underline"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/hey_how_are_you_guy_s"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:maxLines="15"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="#A9A9A9"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/faltu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_name_new_post"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name_new_post" />
+
+    <ImageView
+        android:id="@+id/add_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/insert_image_btn"
+        android:scaleType="centerCrop"
+        android:src="@drawable/insert_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_text" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_place_holder"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:background="#DC6161"
+        android:rotation="0"
+        android:scaleType="centerCrop"
+        android:src="@drawable/card_rectangle"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_write_confirm_details_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_image_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_write_confirm_details_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/confirm_enable"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="48dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="@string/post"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/writeProgress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_write_confirm_details_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_place_holder"
+        app:layout_constraintVertical_bias="0.143" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

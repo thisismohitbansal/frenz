@@ -1,0 +1,32 @@
+<!-- res/menu/bottom_navigation_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_home"
+        app:showAsAction="always"
+        android:icon="@drawable/home_btn"
+        app:actionLayout="@layout/menu_item_home"
+        android:title="" />
+
+    <item
+        android:id="@+id/action_search"
+        app:showAsAction="always"
+        android:icon="@drawable/search"
+        app:actionLayout="@layout/menu_item_search"
+        android:title="" />
+
+    <item
+        android:id="@+id/action_add_post"
+        app:showAsAction="always"
+        android:icon="@drawable/write"
+        app:actionLayout="@layout/menu_item_write"
+        android:title="" />
+
+    <item
+        android:id="@+id/action_profile"
+        app:showAsAction="always"
+        android:icon="@drawable/profile_btn"
+        app:actionLayout="@layout/menu_item_profile"
+        android:title="" />
+</menu>

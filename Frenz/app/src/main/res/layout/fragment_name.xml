@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#0D0D0D"
+    tools:context=".signup.NameFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="200sp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/tell_us_about_yourself"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="28sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:endIconMode="clear_text"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+            android:hint="@string/first_name">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/first_name_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            app:endIconMode="clear_text"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+            android:hint="@string/last_name">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/last_name_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fragment_name_confirm_details_btn"
+            android:layout_width="match_parent"
+            android:backgroundTint="#285ED1"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:minHeight="48dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"
+                android:text="@string/confirm_details"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</FrameLayout>

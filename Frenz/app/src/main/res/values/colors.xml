@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="confirm_disable">#928E98</color>
+    <color name="confirm_enable">#3E76EE</color>
+</resources>

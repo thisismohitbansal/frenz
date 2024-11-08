@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Frenz" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/confirm_enable</item>
+        <item name="colorPrimaryDark">@color/black</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorAccent">@color/confirm_enable</item>
+    </style>
+
+    <style name="Theme.Frenz" parent="Base.Theme.Frenz" />
+
+    <color name="colorPrimaryDark">#285ED2</color>
+    <color name="colorPrimary">#4A7EEE</color>
+</resources>
